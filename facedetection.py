@@ -19,7 +19,11 @@ while True:
 
     # kotak
     for (x, y, w, h) in faces:
-        cv2.rectangle(img, (x, y), (x+w, y+h), (0, 255, 0), 2)
+        cv2.rectangle(img, 
+                      (x, y), 
+                      (x+w, y+h), 
+                      (0, 255, 0), 
+                      2)
     img = cv2.resize(img,(1280,720)) # atur size
     cv2.imshow('img', img)
 
